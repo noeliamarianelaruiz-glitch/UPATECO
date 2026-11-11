@@ -1,5 +1,4 @@
-
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Contacto from './page/Contacto'
 import Acercade from './page/Acercade'
@@ -8,7 +7,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
@@ -17,7 +16,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
