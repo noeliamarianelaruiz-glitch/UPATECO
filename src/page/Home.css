@@ -1,0 +1,42 @@
+.inicio-upateco {
+  padding: clamp(42px, 8vw, 88px) 20px;
+  background:
+    radial-gradient(ellipse at 82% 20%, rgba(239, 104, 72, 0.1), transparent 34%),
+    linear-gradient(135deg, #f8f8ff, #fff 62%);
+}
+
+.inicio-upateco-presentacion {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.inicio-upateco-etiqueta {
+  margin: 0 0 12px;
+  color: #ed6848;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.inicio-upateco-presentacion h1 {
+  margin: 0;
+  color: #24234d;
+  font-size: clamp(42px, 8vw, 76px);
+  letter-spacing: 0.04em;
+}
+
+.inicio-upateco-bajada {
+  margin: 12px 0 0;
+  color: #3735b6;
+  font-size: clamp(18px, 3vw, 25px);
+  font-weight: 700;
+}
+
+.inicio-upateco-descripcion {
+  max-width: 720px;
+  margin: 20px auto 0;
+  color: #66657b;
+  font-size: 17px;
+  line-height: 1.75;
+}

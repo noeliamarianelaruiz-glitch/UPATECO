@@ -1,0 +1,147 @@
+.pagina-contacto {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: clamp(36px, 6vw, 72px) 0;
+  color: #292844;
+}
+
+.contacto-encabezado {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contacto-etiqueta {
+  margin: 0 0 8px;
+  color: #ed6848;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.contacto-encabezado h1 {
+  margin: 0;
+  color: #24234d;
+  font-size: clamp(30px, 5vw, 46px);
+}
+
+.contacto-encabezado > p:last-child {
+  margin: 12px 0 0;
+  color: #737286;
+}
+
+.contacto-contenido {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.contacto-panel {
+  min-width: 0;
+  padding: clamp(20px, 3vw, 32px);
+  border: 1px solid #eeedf3;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(34, 33, 75, 0.07);
+}
+
+.contacto-panel h2 {
+  margin: 0 0 22px;
+  color: #24234d;
+  font-size: 21px;
+}
+
+.contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contacto-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacto-campo label {
+  color: #3d3b5f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contacto-campo input,
+.contacto-campo textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dedde8;
+  border-radius: 10px;
+  background: #fff;
+  color: #292844;
+  font: inherit;
+}
+
+.contacto-campo textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contacto-campo input:focus,
+.contacto-campo textarea:focus {
+  border-color: #514ecf;
+  outline: 3px solid rgba(81, 78, 207, 0.14);
+}
+
+.contacto-enviar {
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 11px;
+  background: #3735b6;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contacto-enviar:hover:not(:disabled) {
+  background: #29278e;
+}
+
+.contacto-enviar:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.contacto-estado {
+  margin: 0;
+  font-size: 14px;
+}
+
+.contacto-estado.ok {
+  color: #187647;
+}
+
+.contacto-estado.error {
+  color: #b42318;
+}
+
+.contacto-mapa {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  border: 0;
+  border-radius: 12px;
+}
+
+@media (max-width: 720px) {
+  .contacto-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto-mapa {
+    min-height: 300px;
+  }
+}

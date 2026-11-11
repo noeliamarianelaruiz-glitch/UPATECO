@@ -1,0 +1,19 @@
+.footer {
+    background: linear-gradient(to right, #1221f7, #eb390d);
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 1.25rem 2rem;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-nombre {
+    font-size: 1.25rem;
+    letter-spacing: 0.08em;
+}
